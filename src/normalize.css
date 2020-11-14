@@ -1,0 +1,25 @@
+button {
+  background-color: #fff;
+  box-sizing: border-box;
+  line-height: 1.25rem;
+  border: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input {
+  line-height: normal;
+}

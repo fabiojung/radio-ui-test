@@ -1,0 +1,78 @@
+.grid {
+  display: flex;
+}
+
+.col {
+  padding: 5px;
+}
+
+.col-1-12 {
+  flex-basis: 8.3333%;
+}
+
+.col-2-12 {
+  flex-basis: 16.6666%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.full-width {
+  flex-grow: 100;
+}
+
+.wrapper, html, body {
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.height-100 {
+  flex: 0 0 100px;
+}
+
+.height-150 {
+  flex: 0 0 150px;
+}
+
+.flex-container {
+  box-shadow: 0 0 2rem rgb(138, 134, 134);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+}
+
+.skipback-btn {
+  flex: 0 0 35px;
+}
+
+.play-button {
+  flex: 0 0 65px;
+}
+
+.skipforward-btn {
+  flex: 0 0 35px;
+}
+
+.pp-playerui-thumbnail {
+  max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.pp-playerui-thumbnail img {
+  max-width: 150px;
+}
+
+.pp-playerui-metadata {
+  flex: 0 0 615px;
+}
