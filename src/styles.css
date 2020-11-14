@@ -22,9 +22,11 @@
   flex-grow: 100;
 }
 
-.wrapper, html, body {
+.wrapper,
+html,
+body {
   -webkit-font-smoothing: antialiased;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 100vh;
   margin: 0;
   background-color: white;
@@ -44,12 +46,20 @@
 }
 
 .flex-container {
+  display: flex;
+  flex: 1 1 132px;
+  justify-content: center;
   box-shadow: 0 0 2rem rgb(138, 134, 134);
+}
+
+.radio-container {
+  max-width: 1280px;
+  align-self: flex-start;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  align-content: center;
   align-items: flex-start;
- 
 }
 
 .skipback-btn {
@@ -65,14 +75,56 @@
 }
 
 .pp-playerui-thumbnail {
+  box-shadow: 0 0 5px 1px #cbcbcb;
+  margin-top: -15px;
   max-width: 150px;
   flex: 0 0 150px;
 }
 
 .pp-playerui-thumbnail img {
-  max-width: 150px;
+  max-width: 100%;
+  max-height: 100%;
+  display: block; 
 }
 
 .pp-playerui-metadata {
-  flex: 0 0 615px;
+  background-color: gray;
+  flex: 1 1 200px;
+}
+
+.showname {
+  background-color: lightcoral;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 13px;
+  background-color: lightcoral;
+}
+
+.persistent-player-controls {
+  flex: 1 0 190px;
+}
+
+.minimize-persistent-player-button::before {
+  font-weight: 700;
+  font-size: 13.6px;
+  content: "MINIMIZE";
+}
+
+.minimize-btn {
+  width: 14px;
+  margin-left: 8px;
+}
+
+.close-persistent-player-button::before {
+  font-weight: 700;
+  font-size: 13.6px;
+  content: "CLOSE";
+}
+
+.close-btn {
+  width: 10px;
+  margin-left: 8px;
 }
