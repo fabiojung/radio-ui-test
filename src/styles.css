@@ -58,6 +58,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-content: center;
   align-items: flex-start;
 }
@@ -104,7 +105,7 @@ body {
 }
 
 .persistent-player-controls {
-  flex: 1 0 190px;
+  flex: 0 0 210px;
 }
 
 .minimize-persistent-player-button::before {
